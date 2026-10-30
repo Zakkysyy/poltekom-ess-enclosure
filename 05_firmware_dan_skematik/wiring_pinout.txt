@@ -1,0 +1,62 @@
+==================================================
+   PANDUAN CEPAT WIRING KABEL (PRAKTIS & MUDAH)
+   Proyek IoT Environmental Sensing (Jurnal Antivirus)
+   + Tambahan: Lampu LED Merah & Buzzer Alarm
+==================================================
+
+1. SENSOR DHT22 (Suhu & Kelembapan)
+   ---------------------------------
+   * VCC (Kaki 1)  --->  Pin 3.3V  (ESP32)
+   * DATA (Kaki 2) --->  Pin D4    (ESP32)
+   * NC (Kaki 3)   --->  (Kosong / Jangan disambung)
+   * GND (Kaki 4)  --->  Pin GND   (ESP32)
+
+
+2. SENSOR MQ-2 (Gas & Asap)
+   ---------------------------------
+   * VCC           --->  Pin VIN   (Tegangan 5V ESP32)
+   * GND           --->  Pin GND   (ESP32)
+   * A0            --->  Pin D34   (ESP32)
+   * D0            --->  (Kosong / Jangan disambung)
+
+
+3. LAYAR LCD 16x2 (Modul I2C)
+   ---------------------------------
+   * GND           --->  Pin GND   (ESP32)
+   * VCC           --->  Pin VIN   (Tegangan 5V ESP32)
+   * SDA           --->  Pin D21   (ESP32)
+   * SCL           --->  Pin D22   (ESP32)
+
+
+4. LAMPU LED MERAH (Indikator Bahaya)
+   ---------------------------------
+   * Anoda (+)     --->  Pin D26   (ESP32)
+   * Katoda (-)    --->  Pin GND   (ESP32)
+
+
+5. BUZZER ALARM (Peringatan Suara)
+   ---------------------------------
+   * Positif (+)   --->  Pin D27   (ESP32)
+   * Negatif (-)   --->  Pin GND   (ESP32)
+
+
+==================================================
+   RINGKASAN DARI SISI PIN ESP32 (CHECKLIST KABEL)
+==================================================
+Tinggal cek satu per satu pin di board ESP32 Anda:
+
+* Pin 3.3V  ---> Masuk ke VCC Sensor DHT22
+* Pin VIN   ---> Masuk ke VCC MQ-2 & VCC LCD (Jalur 5V)
+* Pin GND   ---> Masuk ke Ground semua sensor, LCD, LED & Buzzer
+* Pin D4    ---> Masuk ke Data DHT22
+* Pin D34   ---> Masuk ke Pin A0 MQ-2
+* Pin D21   ---> Masuk ke Pin SDA LCD
+* Pin D22   ---> Masuk ke Pin SCL LCD
+* Pin D26   ---> Masuk ke Anoda (+) LED Merah
+* Pin D27   ---> Masuk ke Positif (+) Buzzer Alarm
+
+==================================================
+LOGIKA SISTEM ALARM:
+- Gas < 300 PPM (Aman)   : LED MATI, Buzzer MATI, LCD: [AMAN]
+- Gas >= 300 PPM (Bahaya): LED NYALA, Buzzer BUNYI, LCD: [BAHAYA]
+==================================================
