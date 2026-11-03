@@ -100,6 +100,21 @@ Seluruh lubang baut di desain CAD **sudah diberi toleransi normal clearance $+0.
 
 ---
 
+
+### 📋 Tabel Rekap Kebutuhan Fastener & Lokasi Pemakaian (Final)
+
+| No | Nama Barang & Ukuran | Dipakai di Mana (Lokasi & Komponen) | Jumlah Pas | Saran Beli (+ Cadangan) | Keterangan Bahan & Catatan |
+| :---: | :--- | :--- | :---: | :---: | :--- |
+| **1** | **Spacer Hex M3 $\times 50\text{ mm}$** *(Male-to-Female)* | **4 Sudut Luar Enclosure**<br>— Tiang penyangga antara Pelat Atas dan Pelat Bawah | 4 pcs | **4 – 5 pcs** | Nylon Putih / Hitam<br>*(Hex 5.4 mm, male stud 6.0 mm)* |
+| **2** | **Baut Pan Head M3 $\times 10\text{ mm}$** | • **Pelat Atas** (4 pcs ke lubang atas spacer)<br>• **PCB ESS 5** (4 pcs di Sekat Tengah)<br>• **Modul Sensor MQ-7** (4 pcs di Sekat Tengah)<br>• **Modul Sensor MQ-2** (4 pcs di Sekat Tengah)<br>• **Sensor DHT22 Bawah** (1 pc di Dinding Depan) | 17 pcs | **20 – 25 pcs** | Stainless / Besi Hitam<br>*(Kepala $\varnothing 5.0\text{ mm}$, seragam & universal)* |
+| **3** | **Baut Panjang M3 $\times 16\text{ mm}$** *(atau $15\text{ mm}$)* | **Dinding Sisi Kanan**<br>— Dudukan Kipas Exhaust 3010 (tembus akrilik 3mm + bodi kipas 10mm) | 4 pcs | **6 pcs** | Stainless / Besi Hitam |
+| **4** | **Spacer Mini PCB M3 $\times 5\text{ mm}$** *(atau $6\text{ mm}$)* | **Sekat Tengah ke PCB ESS 5**<br>— Ganjal antara akrilik dan PCB agar kaki solderan tidak nempel/konslet | 4 pcs | **6 – 10 pcs** | Nylon / Kuningan<br>*(Female-to-Female)* |
+| **5** | **Mur Hexagon M3** *(Nut M3)* | • **Pelat Alas Bawah** (4 pcs kunci stud spacer)<br>• **Kipas Exhaust 3010** (4 pcs)<br>• **PCB ESS 5** (4 pcs)<br>• **Modul Sensor MQ-7** (4 pcs)<br>• **Modul Sensor MQ-2** (4 pcs)<br>• **Sensor DHT22 Bawah** (1 pc) | 21 pcs | **25 – 30 pcs** | Stainless / Besi Hitam |
+| **6** | **Baut Pan Head M2 $\times 8\text{ mm}$** | • **Layar OLED 0.96\"** (4 pcs di Dinding Depan)<br>• **Sensor DHT22 Atas** (1 pc di kuping gantung bodi putih) | 5 pcs | **8 – 10 pcs** | Stainless / Besi Hitam |
+| **7** | **Mur Hexagon M2** *(Nut M2)* | • **Layar OLED 0.96\"** (4 pcs)<br>• **Sensor DHT22 Atas** (1 pc) | 5 pcs | **8 – 10 pcs** | Stainless / Besi Hitam |
+
+---
+
 ## 🖨️ 4. Panduan Cetak Kertas Skala 1:1 (Anti-Menyusut)
 
 Di setiap lembar PDF pada folder `04_gambar_kerja_cetak_a4_1to1/`, terdapat **"PENGGARIS KALIBRASI CETAK 100 mm (10 cm)"** di pojok kanan atas.
